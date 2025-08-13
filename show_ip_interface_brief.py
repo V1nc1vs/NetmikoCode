@@ -1,15 +1,15 @@
 import os
 from netmiko import ConnectHandler
 
-SSH_CONFIG_PATH = os.path.expanduser('C:/Users/User/.ssh/config')
+SSH_CONFIG_PATH = os.path.expanduser('your_ssh_config_path')
 
 def connect_to_device(device_ip):
 
     device={
         'device_type' : 'cisco_ios' ,
         'ip' : device_ip ,
-        'username' : 'admin' ,
-        'password' : 'cisco' ,
+        'username' : 'your_username' ,
+        'password' : 'your_password' ,
         'ssh_config_file': SSH_CONFIG_PATH
     }
 
@@ -46,4 +46,5 @@ while (answer==True):
                 answer = False
         else:
             error_typo = False
+
 
