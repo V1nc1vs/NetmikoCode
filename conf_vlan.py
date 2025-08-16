@@ -44,6 +44,7 @@ while(answer==True):
     typo_error=True
     while(typo_error==True):
         print('give the vlan a name [Yes/No]:')
+        print('\n\n')
         answer_vlan_name=input()
         if(answer_vlan_name!='Yes'):
             if(answer_vlan_name=='No'):
@@ -62,6 +63,7 @@ while(answer==True):
     typo_error=True
     while(typo_error==True):
         print('create an associated SVI [Yes/No]:')
+        print('\n\n')
         answer_interface_vlan=input()
         if(answer_interface_vlan!='Yes'):
             if(answer_interface_vlan=='No'):
@@ -83,6 +85,7 @@ while(answer==True):
     typo_error=True
     while(typo_error==True):
         print('configure hsrp [Yes/No]:')
+        print('\n\n')
         answer_hsrp_conf=input()
         if(answer_hsrp_conf!='Yes'):
             if(answer_hsrp_conf=='No'):
@@ -130,6 +133,7 @@ while(answer==True):
     typo_error=True
     while(typo_error==True):
         print('continue configuring another device [Yes/No]:')
+        print('\n\n')
         answer_continue=input()
         if(answer_continue!='Yes'):
             if(answer_continue=='No'):
@@ -148,3 +152,4 @@ while(answer==True):
     
 
     
+
