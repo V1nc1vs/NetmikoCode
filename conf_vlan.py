@@ -1,7 +1,7 @@
 import os
 from netmiko import ConnectHandler
 
-SSH_CONFIG_PATH = os.path.expanduser('C:/Users/User/.ssh/config')
+SSH_CONFIG_PATH = os.path.expanduser('your_ssh_config_path')
 
 
 def connect_to_device(device_ip,username,password):
@@ -146,4 +146,5 @@ while(answer==True):
 
 
     
+
     
